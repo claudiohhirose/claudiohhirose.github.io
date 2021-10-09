@@ -1,5 +1,5 @@
-# Blog do Prof. Cláudio Hirose
-## Welcome to GitHub Pages
+# Blog de Tecnologia do Cláudio Hirose
+## Bem-vindo!
 
 You can use the [editor on GitHub](https://github.com/claudiohhirose/claudiohhirose.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
