@@ -1,4 +1,4 @@
-## Bem-vindo!
+## Bem-vindo, pessoal!
 
 You can use the [editor on GitHub](https://github.com/claudiohhirose/claudiohhirose.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
