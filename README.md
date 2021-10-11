@@ -1,10 +1,12 @@
+title: "Documentação" 
+
 ## @claudiohhirose
 
 Tecnologia da Informação
 
 
 
-### Sumário 
+### Sumário
 
 ```
 O que é um pacote RPM
@@ -13,10 +15,3 @@ Exemplo
 
 
 ```
-
-
-
-
-
-
-
