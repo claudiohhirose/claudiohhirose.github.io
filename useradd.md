@@ -1,8 +1,9 @@
 ---
 layout: default
-title: executáve/useradd
----
+title: executável/useradd
 
+---
+## useradd
 ```
 Usage: useradd [options] LOGIN
        useradd -D
