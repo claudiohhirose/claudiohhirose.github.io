@@ -1,5 +1,5 @@
 ---
-title: executável/userdel
+title: userdel
 ---
 
 ## userdel

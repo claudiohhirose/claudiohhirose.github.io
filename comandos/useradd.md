@@ -1,6 +1,6 @@
 ---
 layout: default
-title: executável/useradd
+title: useradd
 
 ---
 ## useradd
