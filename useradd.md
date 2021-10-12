@@ -1,9 +1,9 @@
 ---
+layout: default
 title: useradd
-alias: adduser
 ---
 
-```bash
+```
 Usage: useradd [options] LOGIN
        useradd -D
        useradd -D [options]
