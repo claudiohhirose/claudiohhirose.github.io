@@ -2,6 +2,8 @@
 title: Criando Pacotes RPM
 ---
 
+# Criando Pacotes RPM
+
 ## Criando o usuário
 
 Para criar os pacotes RPM, é necessário criar um usuário que não seja administrador do sistema (non-root user). O diretório home do usuário será usado como base para armazenar os scripts, fontes e pacotes RPM criados.
@@ -24,5 +26,53 @@ builder:x:1001:1001:Usuário para criar pacotes RPM:/home/builder:/bin/bash
 ```shell
 [user@myhostname ~]$ id builder
 uid=1001(builder) gid=1001(builder) groups=1001(builder)
+```
+
+
+
+## Criando a primeira estrutura de pacotes
+
+```shell
+[user@myhostname ~]$ sudo dnf install -y rpmdevtools rpmlint tree
+```
+
+```shell
+[user@myhostname ~]$ sudo su - builder
+```
+
+```shell
+[builder@myhostname ~]$ rpmdev-setuptree
+[builder@myhostname ~]$ tree $HOME
+/home/builder
+└── rpmbuild
+    ├── BUILD
+    ├── RPMS
+    ├── SOURCES
+    ├── SPECS
+    └── SRPMS
+
+6 directories, 0 files
+
+```
+
+
+
+```shell
+[builder@myhostname ~]$ cd rpmbuild/SPECS
+
+[builder@myhostname SPECS]$ rpmdev-newspec hello
+hello.spec created; type minimal, rpm version >= 4.14.
+
+[builder@myhostname SPECS]$ tree $HOME
+/home/builder
+└── rpmbuild
+    ├── BUILD
+    ├── RPMS
+    ├── SOURCES
+    ├── SPECS
+    │   └── hello.spec
+    └── SRPMS
+
+6 directories, 1 file
 ```
 
