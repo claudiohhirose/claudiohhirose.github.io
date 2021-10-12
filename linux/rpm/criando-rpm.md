@@ -1,5 +1,5 @@
 ---
-title: criando pacotes rpm
+title: Criando Pacotes RPM
 ---
 
 ## Criando o usuário
