@@ -32,13 +32,18 @@ uid=1001(builder) gid=1001(builder) groups=1001(builder)
 
 ## Criando a primeira estrutura de pacotes
 
+**1.** Instalando os pacotes e dependências necessárias para montar uma estrutura de pacotes
 ```shell
-[user@myhostname ~]$ sudo dnf install -y rpmdevtools rpmlint tree
+[user@myhostname ~]$ sudo dnf install -y rpmdevtools rpmlint tree git
 ```
+
+**2.** Trocar usuário para o "**builder**"
 
 ```shell
 [user@myhostname ~]$ sudo su - builder
 ```
+
+**3.** Criar a estrutura de diretórios para criar um novo pacote. Será criado um diretório chamado **rpmbuild** com subdiretórios
 
 ```shell
 [builder@myhostname ~]$ rpmdev-setuptree
@@ -52,7 +57,6 @@ uid=1001(builder) gid=1001(builder) groups=1001(builder)
     └── SRPMS
 
 6 directories, 0 files
-
 ```
 
 

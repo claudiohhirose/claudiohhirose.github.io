@@ -1,5 +1,5 @@
 ---
-title: comandos
+title: Comandos
 ---
 
 ## Comandos
